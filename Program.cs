@@ -15,7 +15,9 @@ namespace Griswold_A4_Movie_Library_Assignment
             if (!File.Exists(file))
             {
                 {
-                    Console.WriteLine("File does not exist.");
+                    Console.WriteLine("File does not exist. \nFile ha sbeen created.");
+                    //create file
+                    StreamWriter sw = new StreamWriter(file, true);
                 }
             }
             else
